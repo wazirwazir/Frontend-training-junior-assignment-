@@ -181,6 +181,7 @@ button:hover, .form button:focus {
 
 @media (max-width: 600px) {
     .wrapper {
+        width: 95%;
         margin: 15vh auto 10px auto;
     }
     body {
