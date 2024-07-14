@@ -181,10 +181,20 @@ button:hover, .form button:focus {
 
 @media (max-width: 600px) {
     .wrapper {
+        min-width: 300px;
         margin: 15vh auto 10px auto;
     }
+   
     body {
         background-image: url(bg-mobile-dark.jpg);
         background-size: contain;
+    }
+}
+@media (max-width: 390px) {
+    .botbutton, .itemsleft {
+        font-size: .9rem;
+    }
+    .functions {
+        padding: 5px;
     }
 }
