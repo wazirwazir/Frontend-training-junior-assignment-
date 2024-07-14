@@ -1,0 +1,192 @@
+*, * button, * input {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+html {
+    background-color: hsl(243, 85%, 5%);
+}
+body {
+    margin: 0;
+    width: 100%;
+    height: 90vh;
+    background-image: url(bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size:auto;
+    position: absolute;
+    top: 0;
+}
+.wrapper {
+    margin: 13vh auto 0 auto;
+    width: 90%;
+    min-width: 350px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgb(180, 173, 173);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 2px;
+    background-color: transparent;
+}
+.theme {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.input {
+    display: flex;
+    background-color: transparent;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+.radinput {
+    margin: 0;
+    cursor: pointer;
+    display: inline-block;
+    width: 2rem;
+    color: transparent;
+    border: 1px solid hsl(236, 9%, 61%);
+    outline: none;
+    
+}
+h1 {
+    letter-spacing: 7px;
+}
+.textinput {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid transparent;
+    outline: none;
+    box-sizing: border-box;
+    color: hsl(236, 9%, 61%);
+    background-color: hsl(235, 19%, 35%);
+    border-radius: 10px 0 0 10px;
+}
+.add {
+    box-sizing: border-box;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    width: 15%;
+    outline: none;
+    background-color: hsl(235, 13%, 48%);
+    margin-left: .3em;
+    font-weight: bolder;
+    cursor: pointer;
+    color: hsl(238, 36%, 86%);
+    transition-duration: 500ms;
+}
+
+.add:hover {
+    background-color: hsl(235, 19%, 35%);
+}
+.tod {
+    background-color: hsl(235, 19%, 35%);
+    margin-top: 1.5em;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    min-height: 50px;
+    padding: 0;
+}
+.blist {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    gap: 1em;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid grey;
+    color: pink;
+}
+
+.einput {
+    background-color: hsl(235, 19%, 35%);
+    color: white;
+    width: 100%;
+    border: none;
+    font-size: 1.3rem;
+    height: 2rem;
+    outline: none;
+    border-radius: 4px;
+    padding: 0 .5em;
+}
+
+.itemsleft {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+    color: hsl(236, 9%, 61%);
+}
+.functions {
+    padding: 4px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(235, 19%, 35%);
+    box-sizing: border-box;
+    min-height: 50px;
+    border-radius: 0 0 10px 10px;
+}
+.edit {
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: hsl(235, 13%, 48%);
+    color: hsl(238, 36%, 86%);
+    font-weight: bolder;
+    height: 2em;
+    border-radius: 5px;
+    border: none;
+    transition-duration: 500ms;
+    box-shadow: 0 0 5px 0px hsl(238, 36%, 86%);
+    margin-left: auto;
+}
+.edit:hover {
+    color: hsl(235, 19%, 35%);
+    background-color: hsl(236, 9%, 61%);
+}
+.form {
+    display: flex;
+}
+button {
+    margin: 0;
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    font-size: 1rem;
+    color: hsl(236, 9%, 61%);
+    justify-content: center;
+    cursor: pointer;
+}
+button:hover, .form button:focus {
+    color: hsl(220, 98%, 61%);
+}
+.itemsleft {
+    display: flex;
+    gap: .2rem;
+    justify-content: space-between;
+}
+.hide {
+    display: none;
+}
+.away {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    .wrapper {
+        min-width: 300px;
+        width: 80%;
+        margin: 15vh auto 10px auto;
+    }
+    body {
+        background-image: url(bg-mobile-dark.jpg);
+        background-size: contain;
+    }
+}

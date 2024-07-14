@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wazir's Todo App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header><h1>TODO</h1>
+        </header>
+        <div class="input">
+            <input class="textinput" type="text" placeholder="Create a new todo..." id="inputText"> <input class="add" for="inputText" type="button" value="Add">
+        </div>
+        <head>
+        <ul class="tod" id="tod">
+        </ul> 
+        <div class="functions" id="functions">
+                <div class="itemsleft" id="itemsLeft"><span id="itemsQuantity">0</span> items left</div>
+                <div class="form"><button class="botbutton" id="all">All</button>
+                    <button class="botbutton" id="active">Active</button>
+                    <button class="botbutton" id="completed">Completed</button>
+                </div>
+                <button class="botbutton" id="clear">Clear Completed</button>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script> 
+</html>
